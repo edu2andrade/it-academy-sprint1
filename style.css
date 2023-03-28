@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #cecece;
+    padding: 2rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Header --------------------------------------------- */
+
+.header-container {
+    height: 200px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 1rem;
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-container > .h_content {
+    width: 100%;
+    max-width: 1184px;
+    height: 45%;
+}
+
+.header-container > .h_content-1 {
+    background: #7a5808;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-container > .h_content-2 {
+    background: #087a70;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.header-container > .h_content-1 > span {
+    height: 60%;
+    background: #383633;
+    flex-grow: 1;
+}
+
+.header-container > .h_content-1 > .item-2 {
+    flex-grow: 3;
+}
+
+.header-container > .h_content-2 > span {
+    height: 60%;
+    background: #383633;
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-container {
+        height: 250px;
+    }
+    .header-container > .h_content-1 {
+        flex-direction: column;
+        height: 150px;
+    }
+    .header-container > .h_content-1 > span {
+        width: 100%;
+    }
+    .header-container > .h_content-2 {
+        height: 70px;
+    }
+}
+
+/* Main --------------------------------------------- */
+
+.main-container {
+    height: 200px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 1rem;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main-container > .m_content {
+    background: #7a5808;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+}
+
+.main-container > .m_content-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container > .m_content-1 > .m_items-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main-container > .m_content-1 > .m_items-content > .m_items-1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container > .m_content-1 > .m_items-content > .m_items-1 > .m_item {
+    width: 90%;
+    background: #383633;
+    margin: .5rem;
+    flex-grow: 1;
+}
+
+.main-container > .m_content-1 > .m_items-content > .m_items-2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container > .m_content-1 > .m_items-content > .m_items-2 > .m_item {
+    width: 90%;
+    background: #383633;
+    margin: .5rem;
+    flex-grow: 1;
+}
+
+.main-container > .m_content-1 > .m_item-5 {
+    width: 95%;
+    height: 30%;
+    background: #383633;
+    margin: .5rem;
+    flex-grow: 1;
+}
+
+.main-container > .m_content-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main-container > .m_content-2 > .m_item {
+    width: 90%;
+    height: 20%;
+    background: #383633;    
+}
+
+
+@media only screen and (max-width: 992px) {
+    .main-container {
+        flex-direction: column;
+        height: 400px;
+    }
+    .main-container > .m_content-2 {
+        height: 200px;
+        justify-content: center;
+    }
+    .main-container > .m_content-2 > .m_item {
+        height: 30%;
+        width: 95%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .main-container > .m_content-1 > .m_items-content {
+        flex-direction: column;
+    }
+    .main-container > .m_content-1 {
+        height: 800px;
+    }
+    .main-container > .m_content-1 > .m_item-5 {
+        width: 90%;
+        height: 20%;
+    }
+    .main-container > .m_content-2 > .m_item {
+        width: 90%;
+    }
+}
+
+/* Footer --------------------------------------------------------------- */
+
+.footer-container {
+    height: 50px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 1rem;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-container > .f_item {
+    width: 100%;
+    height: 70%;
+    background: #7a5808;    
+}
